@@ -23,7 +23,7 @@ mixin post(post)
               a.btn.btn-primary.btn-xlg.btn-block(href=post.website) Visit Website
             
             if post.address
-              a.btn.btn-primary.btn-xlg.btn-block(href=post.address) Get Directions
+              a.btn.btn-primary.btn-xlg.btn-block(href='/map/' + post.address) Get Directions
  
 block intro 
     .container

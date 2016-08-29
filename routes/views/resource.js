@@ -12,7 +12,7 @@ exports = module.exports = function (req, res) {
 		category: req.params.category,
 	};
 	locals.data = {
-		resourceitems: [],
+		// resourceitems: [],
 		categories: [],
 	};
 
