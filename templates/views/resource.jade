@@ -13,16 +13,16 @@ mixin post(post)
             br
             p!= post.description
             if post.phone
-              a.btn.btn-primary.btn-sm.btn-block(href='tel:' + post.phone) Click to Call
+              a.btn.btn-success.btn-sm.btn-block(href='tel:' + post.phone) Click to Call
               
             if post.email
-              a.btn.btn-primary.btn-sm.btn-block(href='mailto:' + post.email) Email
+              a.btn.btn-success.btn-sm.btn-block(href='mailto:' + post.email) Email
               
             if post.website
-              a.btn.btn-primary.btn-sm.btn-block(href=post.website) Visit Website
+              a.btn.btn-success.btn-sm.btn-block(href=post.website) Visit Website
             
             if post.address
-              a.btn.btn-primary.btn-sm.btn-block(href='http://maps.google.com/?q=1200 ' + post.address) Get Directions
+              a.btn.btn-success.btn-sm.btn-block(href='http://maps.google.com/?q=1200 ' + post.address) Get Directions
               p.small!= post.address
  
 block intro 
