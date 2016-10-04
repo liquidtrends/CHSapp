@@ -3,12 +3,18 @@ extends ../layouts/default
 block intro
   .container
     h1 All Families
+    a(href="/") Go Back
 
 block content
   .container
-    .row: .col-sm-12.col-md-12
-      a(href='/resource/family-wellness').btn.btn-sm.btn-default.btn-block Family Wellness
-      a(href='/resource/parenting-resources').btn.btn-sm.btn-default.btn-block Parenting Resources
-      a(href='/resource/programming-for-violence-prevention').btn.btn-sm.btn-default.btn-block Programming for Violence Prevention
-      a(href='/resource/programming-for-youth').btn.btn-sm.btn-default.btn-block Programming for Youth
-      a(href='/resource/prenatal-resources').btn.btn-sm.btn-default.btn-block Prenatal Resources
+    .row
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/family-wellness').btn.btn-sm.btn-primary.btn-block.btn-home Family Wellness
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/parenting-resources').btn.btn-sm.btn-primary.btn-block.btn-home Parenting Resources
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/programming-for-violence-prevention').btn.btn-sm.btn-primary.btn-block.btn-home Programming for Violence Prevention
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/programming-for-youth').btn.btn-sm.btn-primary.btn-block.btn-home Programming for Youth
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/prenatal-resources').btn.btn-sm.btn-primary.btn-block.btn-home Prenatal Resources

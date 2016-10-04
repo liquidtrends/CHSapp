@@ -36,13 +36,12 @@ exports = module.exports = function (app) {
 	app.get('/', routes.views.index);
 	app.all('/contact', routes.views.contact);
 	app.get('/resource/', routes.views.resource);
-	app.get('/resource/', routes.views.map);
-	app.get('/allfamilies', routes.views.allfamilies);
-	app.get('/families-involved-child-welfare', routes.views.ficw);
-	// app.get('/resource/post/:post', routes.views.resourceitem);
 	app.get('/resource/:category?', routes.views.resource);
-	app.get('/map', routes.views.map);
-	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
-	// app.get('/protected', middleware.requireUser, routes.views.protected);
+	app.get('/allfamilies/', routes.views.allfamilies);
+	app.get('/families-involved-child-welfare/', routes.views.ficw);
+	app.get('/stories/',routes.views.stories);
+	app.get('/stories/story/:post/' , routes.views.storyitem);
+	app.get('/pages/',routes.views.pages);
+	app.get('/pages/:post/' , routes.views.pageitem);
 
 };

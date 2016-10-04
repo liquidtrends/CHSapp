@@ -93,5 +93,4 @@ exports = module.exports = function (req, res) {
 
 		// Render the view
 		view.render('resource');
-		console.log(1+1)
 	};

@@ -1,5 +1,5 @@
 extends ../layouts/default
- 
+
 mixin post(post) 
     .post(data-ks-editable=editable(user, { list: 'Resource', id: post.id }))
  
@@ -13,22 +13,23 @@ mixin post(post)
             br
             p!= post.description
             if post.phone
-              a.btn.btn-success.btn-sm.btn-block(href='tel:' + post.phone) Click to Call
-              
+              a.btn.btn-success.btn-sm.btn-block(href='tel:' + post.phone) Click to Call 
+                span.glyphicon.glyphicon-phone(aria-hidden='true')
             if post.email
-              a.btn.btn-success.btn-sm.btn-block(href='mailto:' + post.email) Email
-              
+              a.btn.btn-success.btn-sm.btn-block(href='mailto:' + post.email) Email 
+                span.glyphicon.glyphicon-envelope(aria-hidden='true')
             if post.website
-              a.btn.btn-success.btn-sm.btn-block(href=post.website) Visit Website
-            
+              a.btn.btn-success.btn-sm.btn-block(href=post.website) Visit Website 
+                span.glyphicon.glyphicon-globe(aria-hidden='true')
             if post.address
-              a.btn.btn-success.btn-sm.btn-block(href='http://maps.google.com/?q=1200 ' + post.address) Get Directions
+              a.btn.btn-success.btn-sm.btn-block(href='http://maps.google.com/?q=1200 ' + post.address) Get Directions 
+                span.glyphicon.glyphicon-map-marker(aria-hidden='true')
               p.small!= post.address
  
 block intro 
     .container
         h1= 'Resources'
- 
+        a(href="/") Go Back
 block content 
     .container: .row
         .col-sm-12.col-md-12

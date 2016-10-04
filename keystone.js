@@ -45,6 +45,7 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	resources: ['resources'],
 	enquiries: 'enquiries',
+	stories: 'stories',
 	users: 'users',
 });
 

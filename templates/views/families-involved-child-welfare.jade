@@ -3,11 +3,15 @@ extends ../layouts/default
 block intro
   .container
     h1 Families Involved with Child Welfare
-
+    a(href="/") Go Back
 block content
   .container
-    .row: .col-sm-12.col-md-12
-      a(href='/resource/family-support').btn.btn-sm.btn-default.btn-block Family Support
-      a(href='/resource/parentel-rights-in-child-welfare-for-aboriginal-parents').btn.btn-sm.btn-default.btn-block Parental Rights in Child Welfare <br /> for Aboriginal Parents
-      a(href='/resource/child-protection-for-aboriginal-children').btn.btn-sm.btn-default.btn-block Child Protection for Aboriginal Children
-      a(href='/resource/other-community-resources').btn.btn-sm.btn-default.btn-block Other Community Resources
+    .row
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/family-support').btn.btn-sm.btn-primary.btn-block.btn-home Family Support
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/parentel-rights-in-child-welfare-for-aboriginal-parents').btn.btn-sm.btn-primary.btn-block.btn-home Parental Rights in Child Welfare <br /> for Aboriginal Parents
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/child-protection-for-aboriginal-children').btn.btn-sm.btn-primary.btn-block.btn-home Child Protection for Aboriginal Children
+      div.col-sm-12.col-md-4.col-lg-4.main-btn
+        a(href='/resource/other-community-resources').btn.btn-sm.btn-primary.btn-block.btn-home Other Community Resources
